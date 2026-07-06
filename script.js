@@ -26,7 +26,7 @@ function randomizeMagicians() {
     // Atenção extra à capitalização aqui!
     const magicians = [
         { src: 'rafael.png', alt: 'Rafael' }, 
-        { src: 'Ronaldo.png', alt: 'Ronaldo' }
+        { src: 'ronaldo.png', alt: 'Ronaldo' }
     ];
 
     if (Math.random() > 0.5) {
