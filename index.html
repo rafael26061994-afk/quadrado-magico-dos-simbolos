@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔮 O Leitor de Mentes Matemático</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="accessibility-bar">
+        <button class="acc-btn" onclick="changeFontSize(1)" title="Aumentar Letra">A+</button>
+        <button class="acc-btn" onclick="changeFontSize(-1)" title="Diminuir Letra">A-</button>
+        <button class="acc-btn" onclick="toggleContrast()" title="Alternar Alto Contraste">🌓 Contraste</button>
+        <button class="acc-btn" onclick="toggleReaderMode()" title="Modo Leitura">📖 Leitura</button>
+        <button class="acc-btn" onclick="readText()" title="Ouvir Texto">🔊 Ouvir</button>
+    </div>
+
+    <div id="main-container" class="container">
+        <div id="screen-instructions" class="screen">
+            <img src="http://googleusercontent.com/image_generation_content/0" alt="Matemágico Jovem" class="magician-img">
+            <h1>🎩 Mentalista Matemático ✨</h1>
+            <div class="content-text">
+                <p>Eu consigo ler sua mente através dos números. Siga os passos cuidadosamente:</p>
+                <ol>
+                    <li>Pense em qualquer número de <strong>10 a 99</strong>.</li>
+                    <li>Some os dois dígitos desse número (Ex: 45 → 4 + 5 = 9).</li>
+                    <li>Subtraia esse resultado do número original (Ex: 45 - 9 = 36).</li>
+                </ol>
+                <p class="highlight">Memorize o resultado final!</p>
+            </div>
+            <button onclick="showTableScreen()">Ver Tabela de Símbolos</button>
+        </div>
+
+        <div id="screen-table" class="screen hidden">
+            <h2>🔮 Procure seu número</h2>
+            <p>Encontre o resultado da sua conta na tabela e <strong>memorize o símbolo</strong> ao lado dele.</p>
+            <div id="symbols-grid" class="grid"></div>
+            
+            <div class="button-group">
+                <button onclick="goBackToInstructions()" class="btn-back">⬅ Voltar</button>
+                <button onclick="revealMind()">Revelar Meu Pensamento! ⚡</button>
+            </div>
+        </div>
+
+        <div id="screen-reveal" class="screen hidden">
+            <img src="http://googleusercontent.com/image_generation_content/1" alt="Matemágico Experiente" class="magician-img">
+            <h2>✨ Sua Mente Foi Hackeada! ✨</h2>
+            <p>O símbolo que você mentalizou foi...</p>
+            <div id="final-symbol" class="big-symbol"></div>
+            <button onclick="resetGame()">Jogar Novamente 🔄</button>
+        </div>
+    </div>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>new window.VLibras.Plugin();</script>
+
+    <script src="script.js"></script>
+</body>
+</html>
