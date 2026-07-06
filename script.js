@@ -25,8 +25,8 @@ function randomizeMagicians() {
     
     // Nomes rigorosamente em letras minúsculas para bater com seus arquivos
     const magicians = [
-        { src: 'rafael.jpg', alt: 'Rafael' }, 
-        { src: 'ronaldo.jpg', alt: 'Ronaldo' }
+        { src: 'rafael.png', alt: 'Rafael' }, 
+        { src: 'ronaldo.png', alt: 'Ronaldo' }
     ];
 
     // Embaralha a ordem do array
